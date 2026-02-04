@@ -162,7 +162,9 @@ STATIC_ROOT = BASE_DIR / "staticfiles" # for searve static file in serverles liv
 STATICFILES_STORAGE= "whitenoise.storage.CompressedStaticFilesStorage"
 
 
-STATIC_URL = 'static/'
+# STATIC_URL = 'static/'
+STATIC_URL = '/static/'
+
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 

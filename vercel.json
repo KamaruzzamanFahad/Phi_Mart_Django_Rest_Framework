@@ -2,7 +2,7 @@
   "version": 2,
   "builds": [
     {
-      "src": "phi_mart/asgi.py",
+      "src": "phi_mart/wsgi.py",
       "use": "@vercel/python",
       "config": {
         "runtime": "python3.12"
@@ -11,12 +11,8 @@
   ],
   "routes": [
     {
-      "src": "/static/(.*)",
-      "dest": "/static/$1"
-    },
-    {
       "src": "/(.*)",
-      "dest": "phi_mart/asgi.py"
+      "dest": "phi_mart/wsgi.py"
     }
   ]
 }
